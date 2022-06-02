@@ -1,0 +1,18 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Karima MASSEN
+	email = mbkarima71@gmail.com
+[core]
+	longpaths = true
+	editor = vim
+[colo]
+	diff = auto
+[color]
+	status = auto
+	branch = auto
+[merge]
+	tool = vimdiff
