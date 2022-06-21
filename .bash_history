@@ -268,3 +268,37 @@ git add README.md
 git remote -v
 code .
 code .
+code .
+code .
+code .
+code .
+code .
+code .
+code .
+code .
+code .
+code .
+code .
+code .
+code .
+code .
+git init
+pwd
+touch index.html
+git status
+git add index.html
+git status
+git commit -m "ajout du fichier"
+touch style.css
+git branch
+git branch main
+git branch
+git checkout main
+git branch
+code .
+npm install
+code .
+code .
+CODE ;
+CODE ;
+code .
