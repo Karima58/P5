@@ -302,3 +302,6 @@ code .
 CODE ;
 CODE ;
 code .
+cd 
+git init
+code .

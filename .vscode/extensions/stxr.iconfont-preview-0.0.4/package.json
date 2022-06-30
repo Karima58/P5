@@ -1,0 +1,70 @@
+{
+	"name": "iconfont-preview",
+	"displayName": "iconfont-preview",
+	"description": "preview iconfont file in vscode",
+	"author": {
+		"name": "stxr"
+	},
+	"icon": "images/logo.png",
+	"publisher": "stxr",
+	"version": "0.0.4",
+	"engines": {
+		"vscode": "^1.51.0"
+	},
+	"categories": [
+		"Visualization"
+	],
+	"keywords": [
+		"ttf",
+		"iconfont"
+	],
+	"activationEvents": [
+		"onCustomEditor:ttf.preview"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Stxr/iconfont-preview-extension"
+	},
+	"main": "./out/extension.js",
+	"contributes": {
+		"customEditors": [
+			{
+				"viewType": "ttf.preview",
+				"displayName": "ttf preview",
+				"selector": [
+					{
+						"filenamePattern": "*.ttf"
+					}
+				]
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/opentype.js": "^1.3.1",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.51.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"tslint": "^5.12.1",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.2"
+	},
+	"dependencies": {
+		"opentype.js": "^1.3.3"
+	},
+	"__metadata": {
+		"id": "394c2c51-f9cf-48b6-901d-6382060a9de1",
+		"publisherId": "5e232c3f-0f64-4c85-b237-f70fafca35da",
+		"publisherDisplayName": "super-txr",
+		"installedTimestamp": 1634623819938
+	}
+}
